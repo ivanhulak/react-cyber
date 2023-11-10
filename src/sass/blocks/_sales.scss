@@ -1,0 +1,67 @@
+.sales{
+   background: linear-gradient(100deg, #2E2E2E 42.36%, #000 98.65%);
+   position: relative;
+   &__image{
+      &--one{
+         position: absolute;
+         left: 39px;
+         top: 3px;
+         z-index: 3;
+      }
+      &--two{
+         position: absolute;
+         left: 222.8px;
+         top: 0;
+         z-index: 2;
+      }
+      &--three{
+         position: absolute;
+         left: 0;
+         bottom: 13px;
+         z-index: 1;
+      }
+      &--four{
+         position: absolute;
+         right: 0;
+         top: 0;
+      }
+      &--five{
+         position: absolute;
+         right: 0;
+         bottom: 0;
+      }
+   }
+   &__body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 448px;
+   }
+   &__info{
+      text-align: center;
+   }
+   &__title{
+      color: var(--main-white);
+      font-size: 72px;
+      font-weight: 200;
+      line-height: 100%;
+      letter-spacing: -0.72px;
+      span{
+         font-weight: 500;
+      }
+   }
+   &__subtitle{
+      color: #787878;
+      font-size: 16px;
+      line-height: 200%;
+   }
+   &__content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+   }
+   &__btn{
+      align-self: center;
+   }
+}

@@ -1,0 +1,111 @@
+.reviews{
+   background: var(--main-white);
+   margin-bottom: 32px;
+   &__body{
+      padding: 88px 0px 0px;
+   }
+   &__content{
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+   }
+   &__leave-comment{
+      border-radius: 7px;
+      border: 0.5px solid #CECECE;
+      background: var(--main-white);
+      input{
+         height: 64px;
+         padding: 24px 16px;
+         width: 100%;
+         cursor: pointer;
+         color: #979797;
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 114.286%;
+         letter-spacing: -0.07px;
+      }
+   }
+}
+
+.box-review{
+   &__inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+   }
+   &__rate{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+      border-radius: 25px;
+      background: #FAFAFA;
+      padding: 32px;
+   }
+   &__stats{
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+}
+
+.rate-review{
+   &__rate{
+      color: var(--main-black);
+      font-size: 56px;
+      font-weight: 500;
+      line-height: 100%;
+   }
+   &__count{
+      opacity: 0.3;
+      color: var(--main-black);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 106.667%;
+   }
+   &__stars{
+      display: flex;
+   }
+}
+.stats-review{
+   &__item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+   }
+   &__title{
+      flex: 1 0 122px;
+      color: var(--main-black);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 88.889%;
+   }
+   &__progress{
+      flex: 1 1 664px;
+      height: 5px;
+      position: relative;
+      border-radius: 16px;
+      background: #D9D9D9;
+      &-value{
+         position: absolute;
+         left: 0;
+         top: 0;
+         height: 5px;
+         background: #FFB547;
+         border-radius: 16px;
+         width: 40%;
+      }
+   }
+   &__total{
+      opacity: 0.4;
+      color: var(--main-black);
+      text-align: right;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 100%;
+   }
+}

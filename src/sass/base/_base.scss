@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular);
+@import url(https://fonts.googleapis.com/css?family=Figtree:600);
+@import url(https://fonts.googleapis.com/css?family=Be+Vietnam+Pro:regular);
+
+$maxWidth: 1920;
+
+@mixin adaptiveValue($property, $startSize, $minSize) {
+   $addSize: $startSize - $minSize;
+   #{$property}: calc(
+      #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320})
+   );
+}
+
+body {
+   font-family: var(--font-sf-pro-display);
+}
+
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.container {
+   max-width: var(--container-width);
+   padding: var(--container-padding);
+   margin: 0 auto;
+   // border: 1px solid #000;
+}
+
+.content {
+   position: relative;
+   width: 100%;
+   padding-top: 88px;
+}
+
+.title-1 {
+   font-size: 96px;
+   letter-spacing: -0.96px;
+   color: var(--main-white);
+   font-weight: 100;
+   line-height: 72px;
+}
+
+.common__button {
+   padding: 16px 30px;
+   border: 1px solid;
+   font-weight: 500;
+   line-height: 150%;
+   width: 184px;
+   transition: all 0.4s ease;
+   &--light {
+      border-radius: 6px;
+      color: var(--main-white);
+      border-color: var(--main-white);
+      &:hover {
+         transition: all 0.4s ease;
+         background: var(--main-white);
+         border-color: var(--main-black);
+         color: var(--main-black);
+      }
+   }
+   &--dark {
+      background: var(--main-white);
+      border-radius: 6px;
+      color: var(--main-black);
+      border-color: var(--main-black);
+      &:hover {
+         transition: all 0.4s ease;
+         background: var(--main-black);
+         color: var(--main-white);
+      }
+   }
+   &--buy {
+      border-radius: 8px;
+      color: var(--main-white);
+      background: var(--main-black);
+      border-color: transparent;
+      &:hover {
+         transition: all 0.4s ease;
+         background: transparent;
+         border-color: var(--main-black);
+         color: var(--main-black);
+      }
+   }
+}
+
+.search {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   border-radius: 8px;
+   background: #f5f5f5;
+   padding: 8px 16px;
+   &-input {
+      width: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 128.571%;
+      color: var(--secondary-grey);
+   }
+}
+
+.viewmore {
+   &__more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #545454;
+      align-self: center;
+      width: 208px;
+      height: 48px;
+      &:hover {
+         background: var(--light-grey);
+         color: var(--main-black);
+      }
+      &-icon {
+         transform: rotate(180deg);
+      }
+   }
+}

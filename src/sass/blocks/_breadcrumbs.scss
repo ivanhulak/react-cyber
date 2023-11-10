@@ -1,0 +1,39 @@
+.breadcrumbs{
+   height: 104px;
+   background: var(--main-white);
+   &__body{
+      padding: 40px 0px;
+   }
+   &__list{
+      display: flex;
+      align-items: center;
+      gap: 56px;
+      li{
+         color: #A4A4A4;
+         font-weight: 500;
+         line-height: 100%;
+         position: relative;
+         cursor: pointer;
+         transition: all 0.4s ease;
+         &:last-child{
+            color: var(--main-black);
+            &:after{
+               display: none;
+            }
+         }
+         &:after{
+            content: '';
+            position: absolute;
+            right: -40px;
+            top: -25%;
+            width: 24px;
+            height: 24px;
+            background: url('../../../public/breadcrumb-arrow.svg') no-repeat;
+         }
+         &:hover{
+            color: var(--main-black);
+            transition: all 0.4s ease;
+         }
+      }
+   }
+}

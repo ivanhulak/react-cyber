@@ -1,0 +1,45 @@
+.mainscreen{
+   background: linear-gradient(91deg, #211C24 0.64%, #211C24 101%);
+   &__body{
+      height: calc(100vh - 136px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__content{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+   &__background{
+      align-self: flex-end;
+      height: calc(100% - 50px);
+      width: 36.25%;
+   }
+   
+}
+
+.content-mainscreen{
+   &__label{
+      color: var(--main-white);
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 128%;
+      opacity: 0.4;
+      font-family: var(--font-figtree);
+   }
+   &__title{
+      span{
+         font-weight: 600;
+      }
+   }
+   &__tagline{
+      color: var(--text-grey);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 133.333%;
+   }
+   &__btn{
+      width: 190px;
+   }
+}

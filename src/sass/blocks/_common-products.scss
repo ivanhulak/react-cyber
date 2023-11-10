@@ -1,0 +1,9 @@
+.common__products{
+   background: var(--main-white);
+   &-body{
+      padding: 80px 0px;
+   }
+   &-title{
+      margin-bottom: 32px;
+   }
+}

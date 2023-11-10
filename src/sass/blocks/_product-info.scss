@@ -1,0 +1,213 @@
+.singleProduct {
+   background: var(--main-white);
+   padding: 112px 0px;
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 48px;
+   }
+}
+
+.info-product {
+   &__images{
+      &-inner{
+         display: flex;
+         align-items: center;
+         gap: 48px;
+      }
+      &-preview{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 24px;
+         li{
+            flex: 0 1 74.8px;
+            img{
+               max-width: 74.8px;
+            }
+         }
+      }
+   }
+
+   &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+   &__content{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+   }
+   &__actions{
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      button{
+         flex: 1 1 auto;
+      }
+   }
+   &__pros{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+   }
+}
+
+.details-info {
+   &__title {
+      color: var(--main-black);
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 100%;
+   }
+   &__price {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      &-current {
+         color: var(--main-black);
+         font-size: 32px;
+         font-weight: 500;
+         line-height: 150%;
+         letter-spacing: 0.96px;
+      }
+      &-old {
+         color: #a0a0a0;
+         font-size: 24px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 133.333%;
+         letter-spacing: 0.72px;
+         text-decoration: line-through;
+      }
+   }
+   &__colors {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      &-label {
+         color: var(--main-black);
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 160%;
+      }
+      &-list {
+         display: flex;
+         gap: 8px;
+         li{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+         }
+      }
+   }
+   &__memory-list {
+      display: flex;
+      gap: 16px;
+      li {
+         cursor: pointer;
+         flex: 0 1 94.4px;
+         height: 48px;
+         border-radius: 8px;
+         border: 1px solid #d5d5d5;
+         color: #6f6f6f;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 114.286%;
+         &.selected {
+            border-color: var(--main-black);
+            color: var(--main-black);
+         }
+      }
+   }
+   &__details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      &-item {
+         padding: 16px;
+         flex: 0 0 168px;
+         height: 64px;
+         border-radius: 7px;
+         background: #f4f4f4;
+         display: flex;
+         align-items: center;
+      }
+   }
+   &__description {
+      p {
+         color: #6c6c6c;
+         font-size: 14px;
+         line-height: 171.429%;
+         letter-spacing: 0.42px;
+         span {
+            color: #2c2c2c;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.42px;
+            text-decoration: underline;
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+.item-details {
+   &__inner {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+   }
+   &__info {
+      &-name {
+         color: #a7a7a7;
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 114.286%;
+      }
+      &-value {
+         color: #4e4e4e;
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 16px;
+      }
+   }
+}
+
+.product-pros{
+   &__inner{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+   }
+   &__icon{
+      border-radius: 11px;
+      background: #F6F6F6;
+      padding: 16px;
+   }
+   &__name{
+      color: #717171;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 171.429%;
+   }
+   &__value{
+      color: var(--main-black);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+   }
+}
+
+.title-24{
+   color: var(--main-black);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 133.333%;
+}

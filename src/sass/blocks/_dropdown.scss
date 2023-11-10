@@ -1,0 +1,222 @@
+.dropdown {
+  width: 256px;
+  max-width: 100%;
+  position: relative;
+  &__button {
+    position: relative;
+    width: 100%;
+    padding: 12px 0px;
+    border-bottom: 0.5px solid #b5b5b5;
+    background: var(--main-white);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    color: var(--main-black);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 133.333%;
+    letter-spacing: 0.54px;
+  }
+  &__arrow {
+    transition: transform ease-in-out 0.4s;
+    width: 24px;
+    height: 24px;
+    background: url("../../../public/dropdown-arrow.svg") no-repeat;
+    transform: rotate(180deg);
+    &.active {
+      transform: rotate(0deg);
+    }
+  }
+  &__content {
+    width: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    &.active {
+      transition: all 0.4s ease;
+      height: fit-content;
+      padding: 24px 0px;
+    }
+  }
+}
+
+.content-dropdown {
+  &__price {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__brand,
+  &__memory{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.brand-dropdown{
+  max-height: 336px;
+}
+.memory-dropdown{
+  max-height: 256px;
+}
+.brand-dropdown,
+.memory-dropdown{
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2px;
+    height: 92px;
+    background: #5D5D5D;
+    border-radius: 2px;
+  }
+  &::-webkit-scrollbar-track{
+    background: #D9D9D9;
+    border-radius: 2px;
+  }
+  &::-webkit-scrollbar-thumb{
+    width: 2px;
+    border-radius: 2px;
+    background: #5D5D5D;
+  }
+  &__search{
+    max-width: 230px;
+    height: 40px;
+      &-input{
+        padding: 3px 0px;
+         height: 24px;
+      }
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+
+.top-dropdown {
+  &__labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    span {
+      color: #a7a7a7;
+      line-height: 171.429%;
+      letter-spacing: -0.07px;
+    }
+  }
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11.5px;
+  }
+  .inputs-dropdown {
+    &__input {
+      border-radius: 3px;
+      border: 0.5px solid #9f9f9f;
+      background: var(--main-white);
+      height: 40px;
+      width: 41.7%;
+      padding: 8px;
+      color: var(--main-black);
+      line-height: 171.429%;
+      letter-spacing: -0.07px;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &--to {
+        text-align: right;
+      }
+    }
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+  &__separator {
+    width: 20px;
+    height: 1px;
+    background: #e7e7e7;
+  }
+}
+.horizontal-slider {
+  position: relative;
+  width: 100%;
+}
+.example-thumb {
+  top: -4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--main-black);
+}
+.example-track {
+   height: 4px;
+   border-radius: 2px;
+   background: #CECECE;
+}
+.example-track-0 {
+   background: #CECECE;
+}
+.example-track-1 {
+   border-radius: 2px;
+   background: #414141;
+}
+
+
+.checkbox-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  label{
+    color: var(--main-black);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 160%;
+    span{
+      color: #929292;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
+.checkbox-wrapper input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+  width: 16.3333px;
+  height: 15.6667px;
+  border-radius: 3px;
+  border: 0.5px solid #D3D3D3;
+  background-color: var(--main-white);
+  outline: none;
+  margin: 0;
+  cursor: pointer;
+  &:focus{
+    border: 0.5px solid var(--main-black);
+  }
+  &:checked{
+    background-color: var(--main-black);
+    border: 0.5px solid transparent;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 5px;
+      top: 25%;
+      left: 25%;
+      background: url('../../../public/checkbox-icon.svg') center no-repeat;
+    }
+  }
+}

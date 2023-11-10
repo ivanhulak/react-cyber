@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "San Francisco Pro";
+  src: local("SFProDisplay-Thin"),
+    local("SFProDisplay-Thin"),
+    url("../fonts/SFProDisplay-Thin.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Thin.woff") format("woff"),
+    url("../fonts/SFProDisplay-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco Pro";
+  src: local("SFProDisplay-Regular"),
+    local("SFProDisplay-Regular"),
+    url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Regular.woff") format("woff"),
+    url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco Pro";
+  src: local("SFProDisplay-Medium"),
+    local("SFProDisplay-Medium"),
+    url("../fonts/SFProDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Medium.woff") format("woff"),
+    url("../fonts/SFProDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco Pro";
+  src: local("SFProDisplay-Semibold"),
+    local("SFProDisplay-Semibold"),
+    url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Semibold.woff") format("woff"),
+    url("../fonts/SFProDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco Pro";
+  src: local("SFProDisplay-Bold"),
+    local("SFProDisplay-Bold"),
+    url("../fonts/SFProDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Bold.woff") format("woff"),
+    url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco Pro Text";
+  src: local("sf-pro-text_semibold"),
+    local("sf-pro-text_semibold"),
+    url("../fonts/sf-pro-text_semibold.woff2") format("woff2"),
+    url("../fonts/SFProText-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco Pro Text";
+  src: local("sf-pro-text-medium-webfont"),
+    local("sf-pro-text-medium-webfont"),
+    url("../fonts/sf-pro-text-medium-webfont.woff2") format("woff2"),
+    url("../fonts/sf-pro-text-medium-webfont.woff") format("woff"),
+    url("../fonts/SFProText-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local('SFProDisplay-Light'), local('SFProDisplay-Light'),
+      url('../fonts/SFProDisplay-Light.woff2') format('woff2'),
+      url('../fonts/SFProDisplay-Light.woff') format('woff'),
+      url('../fonts/SFProDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

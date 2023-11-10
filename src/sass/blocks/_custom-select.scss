@@ -1,0 +1,125 @@
+.custom-select {
+  position: relative;
+  width: 256px;
+  max-width: 100%;
+  color: #000;
+}
+
+.select-button {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 0.5px solid #d4d4d4;
+  background: var(--main-white);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-value {
+  color: var(--main-black);
+  font-size: 15px;
+  line-height: 106.667%;
+  letter-spacing: -0.075px;
+}
+
+.arrow {
+  transition: transform ease-in-out 0.4s;
+  width: 24px;
+  height: 24px;
+  background: url("../../../public/breadcrumb-arrow.svg") no-repeat;
+  transform: rotate(90deg);
+}
+
+.select-dropdown {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: var(--main-white);
+  border: 0.5px solid #d4d4d4;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: 0.5s ease;
+
+  transform: scaleY(0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.select-dropdown li {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 5px;
+  &:last-child{
+   margin-bottom: 0;
+  }
+}
+
+.select-dropdown li label {
+  width: 100%;
+  padding: 8px 0px;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--main-black);
+  font-size: 15px;
+  line-height: 106.667%;
+  letter-spacing: -0.075px;
+}
+
+.select-dropdown::-webkit-scrollbar {
+  width: 7px;
+}
+.select-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+.select-dropdown::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+
+.select-dropdown li:hover{
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+.select-dropdown__item {
+  &.selected{
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+}
+
+
+.select-dropdown input:focus ~ label {
+  background-color: #dfdfdf;
+}
+
+.select-dropdown input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+/* interactivity */
+
+.custom-select.active .arrow {
+  transform: rotate(-90deg);
+}
+
+.custom-select.active .select-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
