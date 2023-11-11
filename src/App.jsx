@@ -16,7 +16,7 @@ export const App = () => {
                     <Route path="/product/:id" element={<ProductPage />} />
                 </Routes>
             </main>
-            <Footer />
+            <Footer /> 
         </div>
     );
 };

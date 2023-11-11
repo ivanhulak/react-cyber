@@ -5,7 +5,7 @@ import { useOutsideClick } from "../hooks/useOutsideClick";
 export const CustomSelect = () => {
    const [isActive, setIsActive] = React.useState(false);
    const [selected, setSelected] = React.useState(false);
-  console.log(selected)
+
    const handleClickOutside = () => {
       setIsActive(false);
    };

@@ -5,10 +5,16 @@ const IMAGES = {
    arrow_prev: new URL('./icons/arrow-prev.svg', import.meta.url).href,
    arrow_next: new URL('./icons/arrow-next.svg', import.meta.url).href,
    favourite_grey: new URL('./svg/favourite-grey.svg', import.meta.url).href,
+   burger: new URL('./svg/burger.svg', import.meta.url).href,
+   close: new URL('./svg/close.svg', import.meta.url).href,
    // Header Features Icons
    favourite: new URL('./svg/favourite.svg', import.meta.url).href,
    purchase: new URL('./svg/purchase.svg', import.meta.url).href,
    profile: new URL('./svg/profile.svg', import.meta.url).href,
+   // Header Mobile Nav Features White Icons
+   fav_white: new URL('./svg/fav_white.svg', import.meta.url).href,
+   purch_white: new URL('./svg/purch_white.svg', import.meta.url).href,
+   prof_white: new URL('./svg/prof_white.svg', import.meta.url).href,
    // Products_new
    products_1: new URL('./images/products/01.png', import.meta.url).href,
    products_2: new URL('./images/products/02.png', import.meta.url).href,
