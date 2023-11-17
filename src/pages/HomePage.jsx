@@ -10,16 +10,17 @@ import { Sales } from "../components/Sales";
 import { products } from "../data/products";
 
 export const HomePage = () => {
-  return (
-    <>
-      <Categories />
-      <MainScreen />
-      <Presale />
-      <BrowseCategory />
-      <Products />
-      <Popular />
-      <CommonProductsLine title={'Discounts up to -50%'} array={products}/>
-      <Sales />
-    </>
-  );
+
+   return (
+      <>
+         <Categories className={"categories"} />
+         <MainScreen />
+         <Presale />
+         <BrowseCategory />
+         <Products />
+         <Popular />
+         <CommonProductsLine title={"Discounts up to -50%"} array={products} />
+         <Sales />
+      </>
+   );
 };

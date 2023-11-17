@@ -5,21 +5,58 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media (max-width: 992px){
+         height: calc(100vh - 87px);
+      }
+      @media (max-width: 900px){
+         gap: 25px;
+      }
+      @media (max-width: 768px){
+         flex-direction: column;
+         padding: 88px 0px 0px;
+         height: unset;
+         gap: 48px;
+      }
+      @media (max-height: 500px){
+         gap: 10px;
+      }
    }
    &__content{
       display: flex;
       flex-direction: column;
       gap: 24px;
+      @media (max-width: 900px) and (min-height: 500px){
+         flex: 0 0 45%;
+      }
+      @media (max-width: 768px){
+         gap: 16px;
+      }
+      @media (max-height: 575px){
+         gap: 12px;
+      }
+      
    }
    &__background{
       align-self: flex-end;
       height: calc(100% - 50px);
       width: 36.25%;
+      background: url('../../../public/iphone_bg.png') center bottom/contain no-repeat;
+      @media (max-width: 992px) and (min-height: 400px){
+         width: 45%;
+      }
+      @media (max-width: 768px){
+         height: 289px;
+         width: 100%;
+         background: url('../../../public/iphone_bg_mob.png') center bottom/contain no-repeat;
+      }
    }
    
 }
 
 .content-mainscreen{
+   @media (max-width: 768px){
+      text-align: center;
+   }
    &__label{
       color: var(--main-white);
       font-size: 25px;
@@ -38,8 +75,14 @@
       font-size: 18px;
       font-weight: 500;
       line-height: 133.333%;
+      @media (max-width: 768px){
+         margin-bottom: 16px;
+      }
    }
    &__btn{
       width: 190px;
+      @media (max-width: 768px){
+         align-self: center;
+      }
    }
 }

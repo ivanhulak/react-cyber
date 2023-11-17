@@ -19,12 +19,7 @@ export const MainScreen = () => {
                   Shop Now
                </CommonButton>
             </div>
-            <div className="mainscreen__background" style={{
-               background: `url(${IMAGES.iphone_bg})`,
-               backgroundSize: 'contain',
-               backgroundPosition: 'center bottom',
-               backgroundRepeat: 'no-repeat'
-            }}></div>
+            <div className="mainscreen__background"></div>
          </div>
       </div>
     </section>

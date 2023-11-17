@@ -8,7 +8,7 @@ export const BrowseCategory = () => {
       <div className="container">
          <div className="browseCategory__body">
             <div className="browseCategory__top">
-               <div className="browseCategory__title">Browse By Category</div>
+               <h2 className="browseCategory__title">Browse By Category</h2>
                <div className="browseCategory__arrows">
                   <button className="browseCategory__arrow browseCategory__arrow--prev">
                      <img src={IMAGES.arrow_prev} alt="arrow prev" />

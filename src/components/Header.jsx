@@ -7,10 +7,10 @@ import { Search } from "./Search";
 import cn from "classnames";
 import IMAGES from "../assets/Images";
 import { BurgerMenuButton } from "./BurgerMenuButton";
+import { Categories } from "./Categories";
 
 export const Header = () => {
-
-   const [isOpened, setIsOpened] = React.useState(false)
+   const [isOpened, setIsOpened] = React.useState(false);
 
    return (
       <header className="header">
@@ -43,15 +43,29 @@ export const Header = () => {
                         </div>
                      </div>
                   </div>
-                  <BurgerMenuButton setIsOpened={setIsOpened} value={isOpened} />
+                  <BurgerMenuButton
+                     setIsOpened={setIsOpened}
+                     value={isOpened}
+                  />
                </div>
             </div>
          </div>
-         <div className={cn('mobile-nav', { 'opened': isOpened })}>
+         <div className={cn("mobile-nav", { opened: isOpened })}>
             <BurgerMenuButton setIsOpened={setIsOpened} value={isOpened} />
             <div className="mobile-nav__inner">
-               <div className="mobile-nav__logo">
-                  <img src={cyber_logo_white} alt="Logotype" />
+               <div className="mobile-nav__top">
+                  <div className="mobile-nav__logo">
+                     <img src={cyber_logo_white} alt="Logotype" />
+                  </div>
+                  <div className="mobile-nav__features">
+                     <ul className="mobile-nav__features-list">
+                        {features_white.map((feature, idx) => (
+                           <li key={idx}>
+                              <img src={feature} alt="feature icon" />
+                           </li>
+                        ))}
+                     </ul>
+                  </div>
                </div>
                <Search className={"mobile-nav__search"} />
                <div className="mobile-nav__menu">
@@ -63,15 +77,7 @@ export const Header = () => {
                      ))}
                   </ul>
                </div>
-               <div className="mobile-nav__features">
-                  <ul className="mobile-nav__features-list">
-                     {features_white.map((feature, idx) => (
-                        <li key={idx}>
-                           <img src={feature} alt="feature icon" />
-                        </li>
-                     ))}
-                  </ul>
-               </div>
+               <Categories className={"categories-mobile"} />
             </div>
          </div>
       </header>

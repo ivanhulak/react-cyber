@@ -15,6 +15,15 @@ const IMAGES = {
    fav_white: new URL('./svg/fav_white.svg', import.meta.url).href,
    purch_white: new URL('./svg/purch_white.svg', import.meta.url).href,
    prof_white: new URL('./svg/prof_white.svg', import.meta.url).href,
+   // Presale Block
+   presale_ps: new URL('./images/presale/playstation.png', import.meta.url).href,
+   presale_ps_mob: new URL('./images/presale/playstation_mob.png', import.meta.url).href,
+   presale_headphones: new URL('./images/presale/headphones.png', import.meta.url).href,
+   presale_headphones_mob: new URL('./images/presale/headphones_mob.png', import.meta.url).href,
+   presale_visionpro: new URL('./images/presale/visionpro.png', import.meta.url).href,
+   presale_visionpro_mob: new URL('./images/presale/visionpro_mob.png', import.meta.url).href,
+   presale_mac: new URL('./images/presale/macbook.png', import.meta.url).href,
+   presale_mac_mob: new URL('./images/presale/macbook_mob.png', import.meta.url).href,
    // Products_new
    products_1: new URL('./images/products/01.png', import.meta.url).href,
    products_2: new URL('./images/products/02.png', import.meta.url).href,

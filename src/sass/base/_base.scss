@@ -38,7 +38,7 @@ code {
 }
 
 .title-1 {
-   font-size: 96px;
+   @include adaptiveValue('font-size', 96, 72);
    letter-spacing: -0.96px;
    color: var(--main-white);
    font-weight: 100;

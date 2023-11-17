@@ -1,18 +1,18 @@
 import React from 'react'
 import { categoriesList } from '../data/categories'
 
-export const Categories = () => {
+export const Categories = ({ className }) => {
   return (
-    <div className="categories">
-      <div className="container">
-         <div className="categories__body">
-            <div className="categories__row">
+    <div className={`${className}`}>
+      <div className={`container ${className}-container`}>
+         <div className={`${className}__body`}>
+            <div className={`${className}__row`}>
                {categoriesList.map(category => (
-                  <div key={category.name} className="categories__item item-categories">
-                     <div className="item-categories__icon">
+                  <div key={category.name} className={`${className}__item item-${className}`} >
+                     <div className={`item-${className}__icon`}>
                         <img src={category.icon} alt={category.name} />
                      </div>
-                     <div className="item-categories__category">{category.name}</div>
+                     <div className={`item-${className}__category`}>{category.name}</div>
                   </div>
                ))}
             </div>
