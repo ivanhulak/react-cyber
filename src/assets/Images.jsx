@@ -47,6 +47,11 @@ const IMAGES = {
    sales_3: new URL('./images/sales/03.png', import.meta.url).href,
    sales_4: new URL('./images/sales/04.png', import.meta.url).href,
    sales_5: new URL('./images/sales/05.png', import.meta.url).href,
+   sales_mob_1: new URL('./images/sales/06.png', import.meta.url).href,
+   sales_mob_2: new URL('./images/sales/07.png', import.meta.url).href,
+   sales_mob_3: new URL('./images/sales/08.png', import.meta.url).href,
+   sales_mob_4: new URL('./images/sales/09.png', import.meta.url).href,
+   sales_mob_5: new URL('./images/sales/10.png', import.meta.url).href,
    // Socials
    twitter: new URL('./svg/socials/twitter.svg', import.meta.url).href,
    facebook: new URL('./svg/socials/facebook.svg', import.meta.url).href,

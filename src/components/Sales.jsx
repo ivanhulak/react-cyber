@@ -1,11 +1,17 @@
 import React from "react";
-import { salesImages } from "../data/salesImages";
+import { useMediaQuery } from "react-responsive";
+import { salesImages, mobileSalesImages } from "../data/salesImages";
 import { CommonButton } from "./CommonButton";
 
+
 export const Sales = () => {
+
+  const breakPoint_1 = useMediaQuery({ query: "(max-width: 600px)" })
+  const imagesList = breakPoint_1 ? mobileSalesImages : salesImages
+
   return (
     <div className="sales">
-      {salesImages.map(image => (
+      {imagesList.map(image => (
          <img key={image.name} className={`sales__image--${image.name}`} src={image.image} alt="image" />
       ))}
       <div className="container">
