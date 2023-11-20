@@ -40,14 +40,15 @@
       align-self: flex-end;
       height: calc(100% - 50px);
       width: 36.25%;
-      background: url('../../../public/iphone_bg.png') center bottom/contain no-repeat;
+      background-position: center bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
       @media (max-width: 992px) and (min-height: 400px){
          width: 45%;
       }
       @media (max-width: 768px){
          height: 289px;
          width: 100%;
-         background: url('../../../public/iphone_bg_mob.png') center bottom/contain no-repeat;
       }
    }
    

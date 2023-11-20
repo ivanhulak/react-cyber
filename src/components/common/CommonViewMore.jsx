@@ -1,6 +1,6 @@
 import React from "react";
 import { CommonButton } from "../CommonButton";
-import btn_arrow from '../../../public/dropdown-arrow.svg'
+import btn_arrow from '../../assets/icons/dropdown-arrow.svg';
 
 export const CommonViewMore = ({ name }) => {
    return (

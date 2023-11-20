@@ -2,6 +2,7 @@ const IMAGES = {
    logo: new URL('./svg/cyber-logo.svg', import.meta.url).href,
    logo_white: new URL('./svg/cyber-logo-white.svg', import.meta.url).href,
    iphone_bg: new URL('./images/iphone_bg.png', import.meta.url).href,
+   iphone_bg_mob: new URL('./images/iphone_bg_mob.png', import.meta.url).href,
    arrow_prev: new URL('./icons/arrow-prev.svg', import.meta.url).href,
    arrow_next: new URL('./icons/arrow-next.svg', import.meta.url).href,
    favourite_grey: new URL('./svg/favourite-grey.svg', import.meta.url).href,

@@ -25,7 +25,7 @@
     transition: transform ease-in-out 0.4s;
     width: 24px;
     height: 24px;
-    background: url("../../../public/dropdown-arrow.svg") no-repeat;
+    background: url("../assets/icons/dropdown-arrow.svg") no-repeat;
     transform: rotate(180deg);
     &.active {
       transform: rotate(0deg);
@@ -216,7 +216,7 @@
       height: 5px;
       top: 25%;
       left: 25%;
-      background: url('../../../public/checkbox-icon.svg') center no-repeat;
+      background: url('../assets/icons/checkbox-icon.svg') center no-repeat;
     }
   }
 }

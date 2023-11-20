@@ -1,13 +1,14 @@
 import React from "react";
+
+const breadcrumbs = ['Home', 'Catalog', 'Smartphones']
 export const BreadCrumbs = () => {
+
   return (
     <div className="breadcrumbs">
       <div className="container">
          <div className="breadcrumbs__body">
             <ul className="breadcrumbs__list">
-               <li>Home</li>
-               <li>Catalog</li>
-               <li>Smartphones</li>
+              {breadcrumbs.map((b, idx) => <li key={idx}>{b}</li>)}
             </ul>
          </div>
       </div>
